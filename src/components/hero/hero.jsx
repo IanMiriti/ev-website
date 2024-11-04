@@ -1,4 +1,4 @@
-import './heo.css'
+import './Hero.css'
 
 
 const hero = () => {
