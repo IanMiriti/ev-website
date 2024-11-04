@@ -6,7 +6,7 @@ import image3 from '../../Assets/image3.jpg'
 
 
 
-const background = ({playStatus,heroCount}) => {
+const Background = ({playStatus,heroCount}) => {
     if (playStatus) {
       return (
         <video className='background' autoPlay loop muted>
@@ -29,4 +29,4 @@ const background = ({playStatus,heroCount}) => {
      
 }
 
-export default background
+export default Background

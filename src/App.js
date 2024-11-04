@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 import { useState } from "react";
 import Background from "./Components/Background/Background";
 
@@ -14,7 +15,15 @@ const App = () => {
   const [playStatus,setPlayStatus] = useState(false);
   return (
     <div>
-      <background playStatus={playStatus} heroCount={heroCount}/>
+      <Background playStatus={playStatus} heroCount={heroCount}/>
+      <Navbar/>
+      <Hero
+        setPlayStatus={setPlayStatus}
+        heroData={heroData}
+        heroCount={heroCount}
+        setHeroCount={setHeroCount}
+        playStatus={playStatus}
+      />
     </div>
   )
 }

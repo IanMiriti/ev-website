@@ -1,10 +1,12 @@
 import './Hero.css'
 
 
-const hero = () => {
+const Hero = ({heroData,setHeroCount,heroCount,setPlayStatus,playStatus}) => {
   return (
-    <div>hero</div>
+    <div>
+
+    </div>
   )
 }
 
-export default hero
+export default Hero
